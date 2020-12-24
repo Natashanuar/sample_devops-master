@@ -5,11 +5,12 @@ pipeline{
   }
   
   stages {
-    tage ('Cloning Git) {
+    stage ('Cloning Git') {
       steps {
         git 'https://github.com/Natashanuar/sample_devops-master.git'
      }
-      
+    }
+    
     stage ('Initialize') {
       steps {
         sh '''
